@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<title>Калькулятор</title>
+		<link href="style.css" rel="stylesheet">
+		<script src="jquery-3.2.1.min.js"></script>
+		<script src="script.js"></script>
+		<style>
+			<!--[if IE]>
+				<style type="text/css">
+ 					 div#IEComment {
+						display: block;
+						margin: auto;
+						font-size: 20px;
+						color: #594429;
+						text-align: center;
+					}
+				div#case, div#display, a#button, a#button:hover {
+					background-image: none;
+				}
+			<![endif]-->
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="IEComment">Внимание! Вы открыли страницу через IE, с связи с чем поведение приложения не может быть предсказуемо(в т.ч. возможно несрабатывание клавиш и начало восстания машин). Пожалуйста, воспользуйтесь другим браузером</div>
+			<div id="case">
+				<div id="display">0</div>
+				<div id="buttonPanel">
+							<!-- row 5 -->
+					<div class="tableRow">
+						<a href="#" class="button empty"></a>
+						<a href="#" class="button empty"></a>
+						<a href="#" id="c" class="button red"><span class="buttonSpan">C</span></a>
+						<a href="#" id="backspace" class="button red"><span class="buttonSpan">&#8592;</span></a>
+					</div>
+							<!-- end row 5 -->
+							<!-- row 4 -->
+					<div class="tableRow">
+						<a href="#" id="b0" class="button yellow"><span class="buttonSpan">0</span></a>
+						<a href="#" id="dot" class="button red"><span class="buttonSpan">.</span></a>
+						<a href="#" id="devidedBy" class="button red"><span class="buttonSpan">&divide;</span></a>
+						<a href="#" id="times" class="button red"><span class="buttonSpan">&times;</span></a>
+					</div>
+							<!-- end row 4 -->
+							<!-- row 3 -->
+					<div class="tableRow">
+						<a href="#" id="b7" class="button yellow"><span class="buttonSpan">7</span></a>
+						<a href="#" id="b8" class="button yellow"><span class="buttonSpan">8</span></a>
+						<a href="#" id="b9" class="button yellow"><span class="buttonSpan">9</span></a>
+						<a href="#" id="minus" class="button red"><span class="buttonSpan">&minus;</span></a>
+					</div>
+							<!-- end row 3 -->
+							<!-- row 2 -->
+					<div class="tableRow">
+						<a href="#" id="b4" class="button yellow"><span class="buttonSpan">4</span></a>
+						<a href="#" id="b5" class="button yellow"><span class="buttonSpan">5</span></a>
+						<a href="#" id="b6" class="button yellow"><span class="buttonSpan">6</span></a>
+						<a href="#" id="plus" class="button red"><span class="buttonSpan">+</span></a>
+					</div>
+							<!-- end row 2 -->	
+							<!-- row 1 -->
+					<div class="tableRow">
+						<a href="#" id="b1" class="button yellow"><span class="buttonSpan">1</span></a>
+						<a href="#" id="b2" class="button yellow"><span class="buttonSpan">2</span></a>
+						<a href="#" id="b3" class="button yellow"><span class="buttonSpan">3</span></a>
+						<a href="#" id="equals" class="button red"><span class="buttonSpan">=</span></a>
+					</div>
+							<!-- end row 1 -->		
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
